@@ -20,7 +20,7 @@ O WAV contém tom/silêncio e o TXT é fornecido separadamente. A observação d
 - Executar Azure Speech/Language reais com mídia autorizada.
 - Executar YOLO real e verificar os instantes no vídeo original.
 - Obter anotações independentes e avaliar pacientes/sessões separados.
-- Publicar o remoto na conta da equipe e executar a matriz de CI.
+- Publicação e primeira matriz de CI concluídas em 10/11/2026. Ver `evidencias/VERIFICACAO_CI.md` para o registro.
 - Gravar/publicar o vídeo exigido pela avaliação e adicionar seu link.
 
 Esses itens não são marcados como concluídos sem evidência. O relatório acadêmico descreve a versão funcional 1.0.0; o pacote 1.0.1 mantém as regras e acrescenta organização, portabilidade e documentação.
