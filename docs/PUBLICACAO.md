@@ -1,6 +1,6 @@
 # Publicar o repositório
 
-Esta pasta reúne os arquivos para um repositório próprio. A cópia local preparada pela entrega é inicializada em Git; o ZIP contém os arquivos, sem histórico `.git`. Não foi criado remoto ou publicado conteúdo na sua conta.
+Esta pasta reúne os arquivos do repositório público [Pedro3257/sentinela-fase4](https://github.com/Pedro3257/sentinela-fase4), publicado em 10 de novembro de 2026. A cópia local tem remoto configurado e histórico Git. O ZIP distribuído anteriormente contém os arquivos, sem histórico `.git`. As instruções abaixo também servem para publicar uma cópia própria.
 
 ## 1. Validar
 

@@ -6,6 +6,8 @@ Protótipo acadêmico em Python para processar sinais vitais, prescrições, mov
 
 Versão de manutenção do repositório: **1.0.1**. As regras e os resultados da versão 1.0.0 permanecem os mesmos. Veja [CHANGELOG](CHANGELOG.md).
 
+Repositório público: [Pedro3257/sentinela-fase4](https://github.com/Pedro3257/sentinela-fase4). Publicação inicial em 10 de novembro de 2026. Consulte os resultados de execução em [GitHub Actions](https://github.com/Pedro3257/sentinela-fase4/actions).
+
 - [Relatório técnico final em PDF](docs/Relatorio_Tecnico_Sentinela_Fase4.pdf) e [fonte em Markdown](docs/Relatorio_Tecnico_Sentinela_Fase4.md).
 - [Apresentação PowerPoint](docs/Apresentacao_Sentinela_Fase4.pptx) e [apresentação em PDF](docs/Apresentacao_Sentinela_Fase4.pdf).
 - [Roteiro de até 10 minutos](docs/Roteiro_10_Minutos_Sentinela_Fase4.pdf), que substitui os tempos mais longos das notas originais dos slides.
@@ -39,7 +41,7 @@ Em uma instalação fora da pasta do repositório, a CLI usa a configuração pa
 
 Para depuração no VS Code, selecione seu interpretador em **Python: Select Interpreter**, escolha **Sentinela: demonstração guiada** e pressione F5. A configuração `.vscode/launch.json` usa o interpretador selecionado, sem caminhos de outro computador.
 
-O workflow `.github/workflows/ci.yml` prevê testes em Python 3.11/3.12 no Windows e Linux após a publicação. A execução dessa matriz no GitHub ainda não foi verificada; os testes locais estão descritos em `evidencias/VERIFICACAO_REPOSITORIO.md`.
+O workflow `.github/workflows/ci.yml` executa testes em Python 3.11/3.12 no Windows e Linux a cada envio. Consulte o estado atual no GitHub Actions; os testes locais estão descritos em `evidencias/VERIFICACAO_REPOSITORIO.md`.
 
 A demonstração não requer pacotes externos. Gera 20 eventos sintéticos e 13 alertas em `resultados/demo`. As evidências da verificação realizada estão em `evidencias/`.
 
@@ -106,4 +108,4 @@ O programa não converte unidades. `config.json` contém parâmetros demonstrati
 
 Núcleo e áudio local foram executados. Conectores Azure e contrato do vídeo têm testes simulados; serviços reais, pesos YOLO e vídeos clínicos não foram executados neste ambiente. Não há credenciais ou dados clínicos fornecidos. O relatório técnico e o roteiro estão em `docs/`.
 
-Ainda são necessários: validação com serviços Azure e mídia real autorizada; publicação do repositório na conta da equipe; gravação e publicação da apresentação. Este protótipo não tem autenticação, criptografia de banco ou auditoria profissional e não deve ser usado como sistema assistencial.
+O repositório já está publicado. Ainda são necessários: validação com serviços Azure e mídia real autorizada; gravação e publicação do vídeo da apresentação. Este protótipo não tem autenticação, criptografia de banco ou auditoria profissional e não deve ser usado como sistema assistencial.

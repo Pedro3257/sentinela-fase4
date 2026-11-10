@@ -15,7 +15,8 @@
 
 ## Etapas externas ainda pendentes
 
-- [ ] Publicar remoto na conta escolhida e conferir o workflow.
+- [x] Publicar remoto na conta escolhida: https://github.com/Pedro3257/sentinela-fase4.
+- [ ] Conferir a conclusão da execução de CI no GitHub Actions.
 - [ ] Validar Azure e YOLO reais com mídia autorizada.
 - [ ] Gravar/publicar o vídeo da entrega e inserir o link real no README.
 - [ ] Definir eventual licença pública com base na titularidade.
