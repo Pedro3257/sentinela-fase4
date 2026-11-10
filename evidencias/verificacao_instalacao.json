@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "python": "3.12.14",
+  "required_files": 16,
+  "readme_links": "valid",
+  "installed_cli_outside_repository": "passed",
+  "synthetic_demo": {
+    "events": 20,
+    "alerts": 13,
+    "rejected": 0
+  },
+  "limits": [
+    "CI remota ainda não executada",
+    "Azure e YOLO reais pendentes"
+  ]
+}

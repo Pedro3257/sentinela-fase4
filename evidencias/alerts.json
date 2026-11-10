@@ -1,0 +1,225 @@
+[
+  {
+    "code": "vital:heart_rate:range",
+    "severity": "high",
+    "evidence": {
+      "value": 145,
+      "limits": {
+        "min": 45,
+        "max": 130,
+        "scale_floor": 3,
+        "unit": "bpm"
+      }
+    },
+    "patient_id": "PAC-SINT-001",
+    "timestamp": "2026-01-01T12:02:00+00:00",
+    "event_id": "demo-0013",
+    "status": "pending_review",
+    "id": "c3df4f4d434b309ddf67b50b"
+  },
+  {
+    "code": "vital:heart_rate:change",
+    "severity": "medium",
+    "evidence": {
+      "value": 145,
+      "median": 76.0,
+      "robust_z": 23.0
+    },
+    "patient_id": "PAC-SINT-001",
+    "timestamp": "2026-01-01T12:02:00+00:00",
+    "event_id": "demo-0013",
+    "status": "pending_review",
+    "id": "e7df1ff175d52aeb15c6c808"
+  },
+  {
+    "code": "vital:spo2:range",
+    "severity": "high",
+    "evidence": {
+      "value": 88,
+      "limits": {
+        "min": 92,
+        "max": 100,
+        "scale_floor": 1,
+        "unit": "%"
+      }
+    },
+    "patient_id": "PAC-SINT-001",
+    "timestamp": "2026-01-01T12:02:00+00:00",
+    "event_id": "demo-0013",
+    "status": "pending_review",
+    "id": "ae7dc6d7c6fb7fab59c8c502"
+  },
+  {
+    "code": "vital:spo2:change",
+    "severity": "medium",
+    "evidence": {
+      "value": 88,
+      "median": 96.0,
+      "robust_z": 8.0
+    },
+    "patient_id": "PAC-SINT-001",
+    "timestamp": "2026-01-01T12:02:00+00:00",
+    "event_id": "demo-0013",
+    "status": "pending_review",
+    "id": "cf85f77035e1c7053b272f82"
+  },
+  {
+    "code": "text:critical_terms",
+    "severity": "high",
+    "evidence": {
+      "terms": [
+        "dor no peito",
+        "falta de ar"
+      ]
+    },
+    "patient_id": "PAC-SINT-001",
+    "timestamp": "2026-01-01T12:02:05+00:00",
+    "event_id": "demo-0014",
+    "status": "pending_review",
+    "id": "76f6084252c0fd8cc4def753"
+  },
+  {
+    "code": "audio:long_pauses",
+    "severity": "medium",
+    "evidence": {
+      "silence_ratio": 0.7,
+      "interpretation": "Pausas prolongadas; confirmar gravação e avaliação humana"
+    },
+    "patient_id": "PAC-SINT-001",
+    "timestamp": "2026-01-01T12:02:05+00:00",
+    "event_id": "demo-0014",
+    "status": "pending_review",
+    "id": "555342f2ec5e1af0eac46a39"
+  },
+  {
+    "code": "fusion:concurrent_evidence",
+    "severity": "high",
+    "evidence": {
+      "modalities": [
+        "audio",
+        "vitals"
+      ],
+      "event_ids": [
+        "demo-0013",
+        "demo-0014"
+      ]
+    },
+    "patient_id": "PAC-SINT-001",
+    "timestamp": "2026-01-01T12:02:05+00:00",
+    "event_id": "demo-0014",
+    "status": "pending_review",
+    "id": "67c02c9c96a6c835e1ffe78c"
+  },
+  {
+    "code": "video:posture_deviation",
+    "severity": "medium",
+    "evidence": {
+      "posture_deviation": true,
+      "trunk_angle_degrees": 57,
+      "duration_seconds": 3,
+      "source": "synthetic_pose_fixture"
+    },
+    "patient_id": "PAC-SINT-001",
+    "timestamp": "2026-01-01T12:02:10+00:00",
+    "event_id": "demo-0015",
+    "status": "pending_review",
+    "id": "4444e0daf83d8972f76bea99"
+  },
+  {
+    "code": "fusion:concurrent_evidence",
+    "severity": "high",
+    "evidence": {
+      "modalities": [
+        "audio",
+        "video",
+        "vitals"
+      ],
+      "event_ids": [
+        "demo-0013",
+        "demo-0014",
+        "demo-0015"
+      ]
+    },
+    "patient_id": "PAC-SINT-001",
+    "timestamp": "2026-01-01T12:02:10+00:00",
+    "event_id": "demo-0015",
+    "status": "pending_review",
+    "id": "789d50d7049baf3cdf5710e1"
+  },
+  {
+    "code": "prescription:dose_change",
+    "severity": "high",
+    "evidence": {
+      "drug": "MEDICAMENTO-DEMO",
+      "previous": 10.0,
+      "current": 30.0,
+      "unit": "mg/day",
+      "ratio": 3.0
+    },
+    "patient_id": "PAC-SINT-001",
+    "timestamp": "2026-01-01T12:02:20+00:00",
+    "event_id": "demo-0016",
+    "status": "pending_review",
+    "id": "3c3756de0e8dd495d5aec651"
+  },
+  {
+    "code": "fusion:concurrent_evidence",
+    "severity": "high",
+    "evidence": {
+      "modalities": [
+        "audio",
+        "prescription",
+        "video",
+        "vitals"
+      ],
+      "event_ids": [
+        "demo-0013",
+        "demo-0014",
+        "demo-0015",
+        "demo-0016"
+      ]
+    },
+    "patient_id": "PAC-SINT-001",
+    "timestamp": "2026-01-01T12:02:20+00:00",
+    "event_id": "demo-0016",
+    "status": "pending_review",
+    "id": "7c41f233f39f705368f84766"
+  },
+  {
+    "code": "movement:immobility",
+    "severity": "medium",
+    "evidence": {
+      "seconds": 2100.0
+    },
+    "patient_id": "PAC-SINT-001",
+    "timestamp": "2026-01-01T12:02:30+00:00",
+    "event_id": "demo-0017",
+    "status": "pending_review",
+    "id": "979901ebeb1602a79944225f"
+  },
+  {
+    "code": "fusion:concurrent_evidence",
+    "severity": "high",
+    "evidence": {
+      "modalities": [
+        "audio",
+        "movement",
+        "prescription",
+        "video",
+        "vitals"
+      ],
+      "event_ids": [
+        "demo-0013",
+        "demo-0014",
+        "demo-0015",
+        "demo-0016",
+        "demo-0017"
+      ]
+    },
+    "patient_id": "PAC-SINT-001",
+    "timestamp": "2026-01-01T12:02:30+00:00",
+    "event_id": "demo-0017",
+    "status": "pending_review",
+    "id": "0be25daaf5e0b387d2a80691"
+  }
+]

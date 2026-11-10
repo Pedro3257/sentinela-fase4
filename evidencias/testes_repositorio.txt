@@ -1,0 +1,25 @@
+test_abnormal_vital_and_duplicate (test_core.DetectionTests.test_abnormal_vital_and_duplicate) ... ok
+test_baseline_not_contaminated (test_core.DetectionTests.test_baseline_not_contaminated) ... ok
+test_demo_and_audio (test_core.DetectionTests.test_demo_and_audio) ... ok
+test_dose_change_and_units (test_core.DetectionTests.test_dose_change_and_units) ... ok
+test_fusion_and_expiry (test_core.DetectionTests.test_fusion_and_expiry) ... ok
+test_invalid_and_out_of_order (test_core.DetectionTests.test_invalid_and_out_of_order) ... ok
+test_negation (test_core.DetectionTests.test_negation) ... ok
+test_patient_isolation (test_core.DetectionTests.test_patient_isolation) ... ok
+test_persistence_and_ack (test_core.DetectionTests.test_persistence_and_ack) ... ok
+test_replay_idempotent (test_core.DetectionTests.test_replay_idempotent) ... ok
+test_language_result (test_media.MediaTests.test_language_result) ... ok
+test_speech_continuous_keeps_multiple_segments (test_media.MediaTests.test_speech_continuous_keeps_multiple_segments) ... ok
+test_speech_error_not_faked (test_media.MediaTests.test_speech_error_not_faked) ... ok
+test_video_persistence_and_report (test_media.MediaTests.test_video_persistence_and_report) ... ok
+test_default_configuration_available_outside_repository (test_packaging.PackagingTests.test_default_configuration_available_outside_repository) ... ok
+test_explicit_missing_configuration_does_not_silently_fallback (test_packaging.PackagingTests.test_explicit_missing_configuration_does_not_silently_fallback) ... ok
+test_local_and_bundled_default_are_equal (test_packaging.PackagingTests.test_local_and_bundled_default_are_equal) ... ok
+test_bad_line_does_not_stop_next_event (test_validation.ValidationTests.test_bad_line_does_not_stop_next_event) ... ok
+test_cli_missing_file_exit_code (test_validation.ValidationTests.test_cli_missing_file_exit_code) ... ok
+test_malformed_modalities (test_validation.ValidationTests.test_malformed_modalities) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.819s
+
+OK

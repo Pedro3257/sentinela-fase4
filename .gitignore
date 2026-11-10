@@ -1,0 +1,32 @@
+# Ambientes e caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Segredos; somente o exemplo vazio é público
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Execuções, bancos e dados clínicos
+resultados/
+dados-reais/
+*.db
+*.db-*
+*.sqlite*
+*.pt
+ULTIMA_DEMONSTRACAO.md
+
+# Empacotamento e editor
+build/
+dist/
+*.egg-info/
+.DS_Store
+Thumbs.db
+*.log

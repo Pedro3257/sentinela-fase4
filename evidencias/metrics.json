@@ -1,0 +1,147 @@
+{
+  "scope": "Teste de regressão com fixtures sintéticas; não mede desempenho clínico ou dos modelos Azure/YOLO",
+  "true_positive_codes": 13,
+  "false_positive_codes": 0,
+  "false_negative_codes": 0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "cases": [
+    {
+      "event_id": "demo-0000",
+      "expected": [],
+      "predicted": []
+    },
+    {
+      "event_id": "demo-0001",
+      "expected": [],
+      "predicted": []
+    },
+    {
+      "event_id": "demo-0002",
+      "expected": [],
+      "predicted": []
+    },
+    {
+      "event_id": "demo-0003",
+      "expected": [],
+      "predicted": []
+    },
+    {
+      "event_id": "demo-0004",
+      "expected": [],
+      "predicted": []
+    },
+    {
+      "event_id": "demo-0005",
+      "expected": [],
+      "predicted": []
+    },
+    {
+      "event_id": "demo-0006",
+      "expected": [],
+      "predicted": []
+    },
+    {
+      "event_id": "demo-0007",
+      "expected": [],
+      "predicted": []
+    },
+    {
+      "event_id": "demo-0008",
+      "expected": [],
+      "predicted": []
+    },
+    {
+      "event_id": "demo-0009",
+      "expected": [],
+      "predicted": []
+    },
+    {
+      "event_id": "demo-0010",
+      "expected": [],
+      "predicted": []
+    },
+    {
+      "event_id": "demo-0011",
+      "expected": [],
+      "predicted": []
+    },
+    {
+      "event_id": "demo-0012",
+      "expected": [],
+      "predicted": []
+    },
+    {
+      "event_id": "demo-0013",
+      "expected": [
+        "vital:heart_rate:change",
+        "vital:heart_rate:range",
+        "vital:spo2:change",
+        "vital:spo2:range"
+      ],
+      "predicted": [
+        "vital:heart_rate:change",
+        "vital:heart_rate:range",
+        "vital:spo2:change",
+        "vital:spo2:range"
+      ]
+    },
+    {
+      "event_id": "demo-0014",
+      "expected": [
+        "audio:long_pauses",
+        "fusion:concurrent_evidence",
+        "text:critical_terms"
+      ],
+      "predicted": [
+        "audio:long_pauses",
+        "fusion:concurrent_evidence",
+        "text:critical_terms"
+      ]
+    },
+    {
+      "event_id": "demo-0015",
+      "expected": [
+        "fusion:concurrent_evidence",
+        "video:posture_deviation"
+      ],
+      "predicted": [
+        "fusion:concurrent_evidence",
+        "video:posture_deviation"
+      ]
+    },
+    {
+      "event_id": "demo-0016",
+      "expected": [
+        "fusion:concurrent_evidence",
+        "prescription:dose_change"
+      ],
+      "predicted": [
+        "fusion:concurrent_evidence",
+        "prescription:dose_change"
+      ]
+    },
+    {
+      "event_id": "demo-0017",
+      "expected": [
+        "fusion:concurrent_evidence",
+        "movement:immobility"
+      ],
+      "predicted": [
+        "fusion:concurrent_evidence",
+        "movement:immobility"
+      ]
+    },
+    {
+      "event_id": "demo-0018",
+      "expected": [],
+      "predicted": []
+    },
+    {
+      "event_id": "demo-0019",
+      "expected": [],
+      "predicted": []
+    }
+  ]
+}

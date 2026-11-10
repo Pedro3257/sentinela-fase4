@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sentinela-multimodal"
+version = "1.0.1"
+description = "Protótipo acadêmico de monitoramento multimodal hospitalar"
+requires-python = ">=3.11"
+readme = "README.md"
+dependencies = []
+
+[project.optional-dependencies]
+azure = ["azure-cognitiveservices-speech>=1.40,<2", "azure-ai-textanalytics>=5.3,<6"]
+video = ["ultralytics>=8.3,<9", "opencv-python>=4.10,<5"]
+
+[project.scripts]
+sentinela = "sentinela.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["sentinela*"]
+
+[tool.setuptools.package-data]
+sentinela = ["default_config.json"]

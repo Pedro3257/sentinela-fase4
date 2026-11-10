@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evento Sentinela Multimodal",
+  "description": "Contrato descritivo. Validação de execução e regras temporais ficam em core.py.",
+  "type": "object",
+  "required": ["id", "patient_id", "timestamp", "modality", "data"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "patient_id": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "timestamp": {"type": "string", "format": "date-time", "pattern": "(?:Z|[+-][0-9]{2}:[0-9]{2})$"},
+    "modality": {"enum": ["vitals", "prescription", "movement", "text", "audio", "video"]},
+    "data": {"type": "object"},
+    "expected_codes": {"type": "array", "items": {"type": "string"}}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"modality": {"const": "vitals"}}},
+      "then": {"properties": {"data": {
+        "minProperties": 1,
+        "properties": {
+          "heart_rate": {"type": "number"},
+          "spo2": {"type": "number"},
+          "systolic_bp": {"type": "number"}
+        },
+        "additionalProperties": false
+      }}}
+    },
+    {
+      "if": {"properties": {"modality": {"const": "prescription"}}},
+      "then": {"properties": {"data": {
+        "required": ["drug", "daily_dose", "unit"],
+        "properties": {
+          "drug": {"type": "string", "pattern": "\\S"},
+          "daily_dose": {"type": "number", "exclusiveMinimum": 0},
+          "unit": {"type": "string", "pattern": "\\S"}
+        }
+      }}}
+    },
+    {
+      "if": {"properties": {"modality": {"const": "movement"}}},
+      "then": {"properties": {"data": {"required": ["immobility_seconds"], "properties": {"immobility_seconds": {"type": "number", "minimum": 0}}}}}
+    },
+    {
+      "if": {"properties": {"modality": {"const": "text"}}},
+      "then": {"properties": {"data": {"required": ["text"], "properties": {"text": {"type": "string", "pattern": "\\S"}}}}}
+    },
+    {
+      "if": {"properties": {"modality": {"const": "audio"}}},
+      "then": {"properties": {"data": {
+        "required": ["transcript"],
+        "properties": {
+          "transcript": {"type": "string", "pattern": "\\S"},
+          "acoustic": {"type": "object", "properties": {"silence_ratio": {"type": "number", "minimum": 0, "maximum": 1}}}
+        }
+      }}}
+    },
+    {
+      "if": {"properties": {"modality": {"const": "video"}}},
+      "then": {"properties": {"data": {"required": ["posture_deviation"], "properties": {"posture_deviation": {"type": "boolean"}}}}}
+    }
+  ]
+}

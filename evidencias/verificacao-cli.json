@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "checks": [
+    "CLI demo: 20 eventos, 13 alertas, zero rejeitados",
+    "Reexecução sobre o mesmo banco: sem duplicação",
+    "CLI ack: confirmação persistida e lida em processo separado",
+    "CLI audio: WAV real sintético analisado, transcrição fornecida e 2 alertas gerados",
+    "CLI evaluate: resultado sintético consistente",
+    "CLI --follow: espera linha completa e emite alerta após acréscimo; finalização forçada apenas neste teste",
+    "Arquivo inexistente: código de falha 1 e mensagem sem traceback"
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "limits": [
+    "Azure: testes simulados; sem credenciais e SDK real",
+    "YOLO: teste simulado; sem torch, opencv e ultralytics neste runtime",
+    "Sem validação clínica"
+  ]
+}

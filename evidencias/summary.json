@@ -1,0 +1,18 @@
+{
+  "events_read_this_run": 20,
+  "stored_events": 20,
+  "alerts": 13,
+  "by_code": {
+    "vital:heart_rate:range": 1,
+    "vital:heart_rate:change": 1,
+    "vital:spo2:range": 1,
+    "vital:spo2:change": 1,
+    "text:critical_terms": 1,
+    "audio:long_pauses": 1,
+    "fusion:concurrent_evidence": 4,
+    "video:posture_deviation": 1,
+    "prescription:dose_change": 1,
+    "movement:immobility": 1
+  },
+  "rejected": 0
+}

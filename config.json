@@ -1,0 +1,16 @@
+{
+  "baseline_window": 30,
+  "baseline_min": 8,
+  "robust_z": 4.0,
+  "fusion_window_seconds": 300,
+  "dose_ratio": 2.0,
+  "silence_ratio": 0.55,
+  "immobility_seconds": 1800,
+  "video_trunk_angle_degrees": 40,
+  "video_persistence_seconds": 2,
+  "vitals": {
+    "heart_rate": {"min": 45, "max": 130, "scale_floor": 3, "unit": "bpm"},
+    "spo2": {"min": 92, "max": 100, "scale_floor": 1, "unit": "%"},
+    "systolic_bp": {"min": 90, "max": 180, "scale_floor": 5, "unit": "mmHg"}
+  }
+}
